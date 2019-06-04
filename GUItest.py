@@ -32,17 +32,6 @@ label4 = Label(fup, text="", width=8, anchor=E)
 label4.grid(row=4, column=1)
 
 
-# class MyThread(threading.Thread):
-#     def __init__ (self):
-#         threading.Thread.__init__(self)
-#     def run(self) -> None:
-
-
-# def ak():
-#     t.start()
-#     t.join()
-
-
 def done():
     for i in range(0, int(num.get())):
         for Page in range(1, int(pageNum.get()) + 1):
@@ -84,12 +73,6 @@ def loop():
     t = threading.Thread(target=done)
     t.setDaemon(True)
     t.start()
-
-
-def stop():
-    global flag
-    flag = False
-
 
 fdown = Frame(root)
 fdown.pack()
